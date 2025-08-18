@@ -1,0 +1,223 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens to match Nevorix brand colors */
+  --background: #2e2e2e; /* Charcoal Black as primary background */
+  --foreground: #e5e5e5; /* Platinum White for text */
+  --card: #2e2e2e; /* Dark card background */
+  --card-foreground: #e5e5e5; /* Light card text */
+  --popover: #2e2e2e; /* Dark popover */
+  --popover-foreground: #e5e5e5; /* Light popover text */
+  --primary: #962de8; /* Primary Purple for main branding */
+  --primary-foreground: #ffffff; /* White for text on primary */
+  --secondary: #ffde59; /* Golden Yellow for accents */
+  --secondary-foreground: #2e2e2e; /* Charcoal Black for secondary text */
+  --muted: #374151; /* Dark muted background */
+  --muted-foreground: #9ca3af; /* Light muted text */
+  --accent: #ff914d; /* Golden Orange for highlights */
+  --accent-foreground: #2e2e2e; /* Charcoal Black for accent text */
+  --destructive: #ff4c4c; /* Red for alerts */
+  --destructive-foreground: #ffffff; /* White for destructive text */
+  --border: #374151; /* Dark border */
+  --input: #2a2a2a; /* Dark input background */
+  --ring: #962de8; /* Primary purple for focus rings */
+  --chart-1: #ffde59; /* Golden Yellow */
+  --chart-2: #ff914d; /* Golden Orange */
+  --chart-3: #3533cd; /* Electric Blue */
+  --chart-4: #962de8; /* Primary Purple */
+  --chart-5: #e5e5e5; /* Light grey */
+  --radius: 0.5rem; /* Standard border radius for rounded corners */
+  --sidebar: #2e2e2e; /* Dark sidebar */
+  --sidebar-foreground: #e5e5e5; /* Light sidebar text */
+  --sidebar-primary: #962de8; /* Primary Purple for sidebar highlights */
+  --sidebar-primary-foreground: #ffffff; /* White for sidebar highlight text */
+  --sidebar-accent: #ff914d; /* Golden Orange for sidebar accents */
+  --sidebar-accent-foreground: #2e2e2e; /* Dark text for sidebar accent text */
+  --sidebar-border: #374151; /* Dark sidebar border */
+  --sidebar-ring: #962de8; /* Primary purple for sidebar focus */
+
+  /* Added custom Nevorix brand color variables */
+  --nevorix-purple: #962de8;
+  --nevorix-yellow: #ffde59;
+  --nevorix-orange: #ff914d;
+  --nevorix-blue: #3533cd;
+  --nevorix-platinum: #e5e5e5;
+  --nevorix-charcoal: #2e2e2e;
+}
+
+.dark {
+  --background: #1a1a1a; /* Dark background */
+  --foreground: #e5e5e5; /* Light text */
+  --card: #2a2a2a; /* Dark card background */
+  --card-foreground: #e5e5e5; /* Light card text */
+  --popover: #2a2a2a; /* Dark popover */
+  --popover-foreground: #e5e5e5; /* Light popover text */
+  --primary: #962de8; /* Keep primary purple */
+  --primary-foreground: #ffffff; /* White for text on primary */
+  --secondary: #ffde59; /* Keep golden yellow */
+  --secondary-foreground: #2e2e2e; /* Dark text on secondary */
+  --muted: #374151; /* Dark muted background */
+  --muted-foreground: #9ca3af; /* Light muted text */
+  --accent: #ff914d; /* Keep golden orange */
+  --accent-foreground: #2e2e2e; /* Dark text on accent */
+  --destructive: #ff4c4c; /* Keep red */
+  --destructive-foreground: #ffffff; /* White for destructive text */
+  --border: #374151; /* Dark border */
+  --input: #2a2a2a; /* Dark input background */
+  --ring: #962de8; /* Keep primary purple for focus */
+  --chart-1: #ffde59; /* Golden Yellow */
+  --chart-2: #ff914d; /* Golden Orange */
+  --chart-3: #3533cd; /* Electric Blue */
+  --chart-4: #962de8; /* Primary Purple */
+  --chart-5: #e5e5e5; /* Light grey for dark mode */
+  --sidebar: #1a1a1a; /* Dark sidebar */
+  --sidebar-foreground: #e5e5e5; /* Light sidebar text */
+  --sidebar-primary: #962de8; /* Primary Purple for sidebar highlights */
+  --sidebar-primary-foreground: #ffffff; /* White for sidebar highlight text */
+  --sidebar-accent: #ff914d; /* Golden Orange for sidebar accents */
+  --sidebar-accent-foreground: #2e2e2e; /* Dark text for sidebar accent text */
+  --sidebar-border: #374151; /* Dark sidebar border */
+  --sidebar-ring: #962de8; /* Primary purple for sidebar focus */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added Nevorix brand color utilities */
+  --color-nevorix-purple: var(--nevorix-purple);
+  --color-nevorix-yellow: var(--nevorix-yellow);
+  --color-nevorix-orange: var(--nevorix-orange);
+  --color-nevorix-blue: var(--nevorix-blue);
+  --color-nevorix-platinum: var(--nevorix-platinum);
+  --color-nevorix-charcoal: var(--nevorix-charcoal);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom animations and utilities for Nevorix */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(150, 45, 232, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(150, 45, 232, 0.6);
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--nevorix-purple), var(--nevorix-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--nevorix-yellow), var(--nevorix-orange));
+}
+
+.tech-pattern {
+  background-image: radial-gradient(circle at 25% 25%, rgba(150, 45, 232, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(53, 51, 205, 0.1) 0%, transparent 50%);
+}
+
+/* Added smooth scrolling for better navigation experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Added custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nevorix-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--nevorix-purple), var(--nevorix-blue));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--nevorix-blue), var(--nevorix-purple));
+}
