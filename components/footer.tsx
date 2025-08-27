@@ -30,7 +30,7 @@ export function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold font-work-sans mb-4">Services</h3>
             <ul className="space-y-3">
               <li>
@@ -59,15 +59,15 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Products */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold font-work-sans mb-4">Products</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-background/80 hover:text-primary transition-colors">
-                  Nemo Platform
+                  Nevo Platform
                 </a>
               </li>
               <li>
@@ -86,43 +86,45 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact & Newsletter */}
-          <div>
-            <h3 className="text-lg font-semibold font-work-sans mb-4">Stay Connected</h3>
-            <div className="space-y-4 mb-6">
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-primary" />
-                <span className="text-background/80">hello@nevorix.com</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <span className="text-background/80">+1 (551) 482-5049</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span className="text-background/80">Jersey City, USA</span>
-              </div>
+          {/* Contact & Newsletter */}
+        <div className="w-full md:w-auto md:justify-self-end lg:col-start-4 lg:justify-self-end">
+          <h3 className="text-lg font-semibold font-work-sans mb-4">Stay Connected</h3>
+          <div className="space-y-4 mb-6">
+            <div className="flex items-center space-x-3">
+              <Mail className="w-5 h-5 text-primary" />
+              <span className="text-background/80">hello@nevorix.com</span>
             </div>
+            <div className="flex items-center space-x-3">
+              <Phone className="w-5 h-5 text-primary" />
+              <span className="text-background/80">+1 (551) 482-5049</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <MapPin className="w-5 h-5 text-primary" />
+              <span className="text-background/80">Jersey City, USA</span>
+            </div>
+          </div>
 
-            <div>
-              <p className="text-sm text-background/80 mb-3">Subscribe to our newsletter</p>
-              <div className="flex space-x-2">
-                <Input
-                  placeholder="Enter your email"
-                  className="bg-background/10 border-background/20 text-background placeholder:text-background/60"
-                />
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Subscribe</Button>
-              </div>
+          <div>
+            <p className="text-sm text-background/80 mb-3">Subscribe to our newsletter</p>
+            <div className="flex space-x-2">
+              <Input
+                placeholder="Enter your email"
+                className="bg-background/10 border-background/20 text-background placeholder:text-background/60"
+              />
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Subscribe</Button>
             </div>
           </div>
         </div>
+        </div>
+
 
         {/* Bottom Bar */}
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-background/60 text-sm mb-4 md:mb-0">© 2024 NEVORIX. All rights reserved.</p>
+            <p className="text-background/60 text-sm mb-4 md:mb-0">© 2025 NEVORIX. All rights reserved.</p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/60 hover:text-primary transition-colors">
                 Privacy Policy

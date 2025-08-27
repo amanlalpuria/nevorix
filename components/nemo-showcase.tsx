@@ -2,13 +2,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ShoppingCart, Users, BarChart3, Shield, Smartphone, Globe } from "lucide-react"
 
-export function NemoShowcase() {
+export function NevoShowcase() {
   return (
-    <section id="nemo" className="py-20 bg-card">
+    <section id="nevo" className="py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-work-sans mb-6">
-            Meet <span className="gradient-text">NEMO</span>
+            Meet <span className="gradient-text">NEVO</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Our flagship product - a comprehensive eCommerce and order management platform that revolutionizes vendor
@@ -20,7 +20,7 @@ export function NemoShowcase() {
           <div>
             <h3 className="text-3xl font-bold font-work-sans mb-6 text-foreground">The Black Box Solution</h3>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Nemo is a scalable, efficient, and secure platform built with modular monolith architecture. It provides
+              Nevo is a scalable, efficient, and secure platform built with modular monolith architecture. It provides
               centralized operations while ensuring future scalability for your business growth.
             </p>
             <div className="space-y-4 mb-8">
@@ -41,9 +41,9 @@ export function NemoShowcase() {
                 <span className="text-foreground">Advanced authentication and security</span>
               </div>
             </div>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3">
-              Learn More About Nemo
-            </Button>
+            {/* <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3">
+              Learn More About Nevo
+            </Button> */}
           </div>
 
           <div className="relative">

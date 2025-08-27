@@ -57,19 +57,19 @@ export function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#962DE8] transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection("nemo")}
+              onClick={() => scrollToSection("nevo")}
               className="text-[#E5E5E5] hover:text-[#962DE8] transition-all duration-300 font-medium relative group"
             >
-              Discover Nemo
+              Discover Nevo
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#962DE8] transition-all duration-300 group-hover:w-full"></span>
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection("services")}
               className="text-[#E5E5E5] hover:text-[#962DE8] transition-all duration-300 font-medium relative group"
             >
               Our Services
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#962DE8] transition-all duration-300 group-hover:w-full"></span>
-            </button>
+            </button> */}
             <button
               onClick={() => scrollToSection("about")}
               className="text-[#E5E5E5] hover:text-[#962DE8] transition-all duration-300 font-medium relative group"
@@ -104,10 +104,10 @@ export function Header() {
                 Home
               </button>
               <button
-                onClick={() => scrollToSection("nemo")}
+                onClick={() => scrollToSection("Nevo")}
                 className="text-[#E5E5E5] hover:text-[#962DE8] transition-colors font-medium text-left"
               >
-                Discover Nemo
+                Discover Nevo
               </button>
               <button
                 onClick={() => scrollToSection("services")}

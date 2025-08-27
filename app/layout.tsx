@@ -20,7 +20,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "NEVORIX - Innovative Tech Solutions",
   description:
-    "NEVORIX specializes in web development, mobile development, digitalization, automation, and UI/UX design. Discover our flagship product Nemo - a comprehensive eCommerce platform.",
+    "NEVORIX specializes in web development, mobile development, digitalization, automation, and UI/UX design. Discover our flagship product Nevo - a comprehensive eCommerce platform.",
   generator: "aman.lalpuria",
 }
 

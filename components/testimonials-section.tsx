@@ -8,32 +8,32 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react"
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
+      name: "Rishi Shah",
+      company: "Sipstr",
       role: "CEO",
       content:
-        "NEVORIX transformed our business with their innovative solutions. The Nemo platform exceeded all our expectations and significantly boosted our sales.",
+        "NEVORIX transformed our business with their innovative solutions. The Nevo platform exceeded all our expectations and significantly boosted our sales.",
       rating: 5,
       avatar: "/professional-woman-ceo.png",
     },
     {
-      name: "Michael Chen",
-      company: "Digital Ventures",
+      name: "Parth Gandhi",
+      company: "FirstEconomey",
       role: "CTO",
       content:
         "The team at NEVORIX delivered exceptional results. Their technical expertise and attention to detail made our project a huge success.",
       rating: 5,
       avatar: "/professional-man-cto.png",
     },
-    {
-      name: "Emily Rodriguez",
-      company: "E-Commerce Plus",
-      role: "Founder",
-      content:
-        "Working with NEVORIX was a game-changer. Their automation solutions saved us countless hours and improved our efficiency dramatically.",
-      rating: 5,
-      avatar: "/professional-woman-founder.png",
-    },
+    // {
+    //   name: "Emily Rodriguez",
+    //   company: "E-Commerce Plus",
+    //   role: "Founder",
+    //   content:
+    //     "Working with NEVORIX was a game-changer. Their automation solutions saved us countless hours and improved our efficiency dramatically.",
+    //   rating: 5,
+    //   avatar: "/professional-woman-founder.png",
+    // },
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -121,7 +121,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-3xl mx-auto">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-3xl mx-auto">
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">98%</div>
             <div className="text-muted-foreground">Client Satisfaction</div>
@@ -138,7 +138,7 @@ export function TestimonialsSection() {
             <div className="text-4xl font-bold text-secondary mb-2">3+</div>
             <div className="text-muted-foreground">Years Experience</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

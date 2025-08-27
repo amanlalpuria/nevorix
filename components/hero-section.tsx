@@ -67,14 +67,14 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Button
               size="lg"
-              onClick={() => document.getElementById("nemo")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("nevo")?.scrollIntoView({ behavior: "smooth" })}
               className="bg-gradient-to-r from-[#962DE8] to-[#3533CD] hover:from-[#962DE8]/90 hover:to-[#3533CD]/90 text-white font-semibold px-10 py-4 text-lg group rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg shadow-[#962DE8]/25"
             >
               <Rocket className="mr-2 w-5 h-5" />
-              Discover Nemo
+              Discover Nevo
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
@@ -82,10 +82,10 @@ export function HeroSection() {
             >
               <Zap className="mr-2 w-5 h-5" />
               Our Services
-            </Button>
+            </Button> */}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center group">
               <div className="bg-gradient-to-br from-[#962DE8]/10 to-[#3533CD]/10 border border-[#962DE8]/20 rounded-2xl p-6 transform group-hover:scale-105 transition-all duration-300">
                 <div className="text-4xl font-bold bg-gradient-to-r from-[#962DE8] to-[#3533CD] bg-clip-text text-transparent mb-2">
@@ -118,7 +118,7 @@ export function HeroSection() {
                 <div className="text-sm text-[#E5E5E5]/70 font-medium">Average Rating</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
